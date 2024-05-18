@@ -1,0 +1,209 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "Cool",
+        "Hey there",
+        "Greetings",
+        "What's up"
+      ],
+      "responses": [
+        "Hey there! How can I assist you today?",
+        "Hello! How can I help you?",
+        "Hi! What can I do for you?",
+        "Hi there! How can I assist you?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "Goodbye! Take care.",
+        "See you later! Have a great day.",
+        "Bye! Hope to see you again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["You're welcome!", "Glad to help!", "My pleasure"]
+    },
+    {
+      "tag": "bot_info",
+      "patterns": [
+        "What can you do?",
+        "What are your capabilities?",
+        "How can you help me?",
+        "What services do you offer?"
+      ],
+      "responses": [
+        "I'm here to assist you with information about plants and gardening.",
+        "I can provide information on plant care, planting instructions, and more.",
+        "I offer guidance on plant selection, care, and maintenance. Feel free to ask me anything!"
+      ]
+    },
+    {
+      "tag": "inteligent_bot",
+      "patterns": [
+        "Are you an intelligent bot?",
+        "Are you a smart bot?",
+        "Who created you?",
+        "What is your purpose?"
+      ],
+      "responses": [
+        "I'm an AI bot designed to assist you with plant-related queries. Feel free to ask me anything!",
+        "I'm a bot programmed to provide information on plants and gardening. Limpa and Kolin created me by using PyTorch and NeuralNet",
+        "I'm here to help you with plant care, planting tips, and more.  Limpa and Kolin created me by using PyTorch and NeuralNet",
+        "My name is PlantBot and I'm here to help you with plant-related questions. Limpa and Kolin created me by using PyTorch and NeuralNet"
+      ]
+    },
+    {
+      "tag": "work_process",
+      "patterns": [
+        "How do you work?",
+        "What is your working process?",
+        "How do you operate?",
+        "What is your workflow?",
+        "How do you generate responses?",
+        "How you work?"
+      ],
+      "responses": [
+        "I operate by analyzing your queries and providing relevant information based on predefined responses.",
+        "I work by understanding your questions and responding with appropriate answers based on my training data.",
+        "My workflow involves processing your questions and generating responses based on the information available to me.",
+        "I analyze your questions and provide answers based on the data I have been trained on.",
+        "I process your queries and generate responses based on the patterns and responses in my training data.",
+        "I operate by interpreting your questions and generating responses based on the patterns in my training data."
+      ]
+    },
+
+    {
+      "tag": "plant_info",
+      "patterns": [
+        "Tell me about plants",
+        "What plants do you have?",
+        "Can you give me information about planting?",
+        "How do I plant a tree?"
+      ],
+      "responses": [
+        "We have a variety of plants available. What specific plant are you interested in?",
+        "Sure! What kind of plant information are you looking for?",
+        "Planting a tree can be a wonderful experience! What tree species are you interested in?"
+      ]
+    },
+
+    {
+      "tag": "plant_types",
+      "patterns": [
+        "What types of plants do you sell?",
+        "Do you have flowers?",
+        "Do you offer fruit trees?"
+      ],
+      "responses": [
+        "We offer a diverse range of plants including flowers, fruit trees, shrubs, and more.",
+        "Our selection includes flowers, fruit trees, shrubs, and various other plants.",
+        "Yes, we have fruit trees along with other types of plants such as flowers and shrubs."
+      ]
+    },
+    {
+      "tag": "plant_care",
+      "patterns": [
+        "How do I care for my plants?",
+        "What's the best way to take care of flowers?",
+        "Do you have any tips for plant maintenance?"
+      ],
+      "responses": [
+        "Proper watering, sunlight, and soil are essential for plant care. Each plant may have specific needs, so it's good to research or ask for guidance.",
+        "Regular watering, pruning, and providing adequate sunlight are key for maintaining healthy plants. Would you like more specific tips?",
+        "Plant care varies depending on the species. Generally, proper watering, sunlight, and occasional fertilization are important. Would you like advice on a particular plant?"
+      ]
+    },
+    {
+      "tag": "planting_process",
+      "patterns": [
+        "How do I plant a tree?",
+        "Can you guide me through planting a flower?",
+        "What are the steps for planting shrubs?"
+      ],
+      "responses": [
+        "Planting involves preparing the soil, digging a hole, placing the plant, and backfilling with soil. Would you like detailed instructions for a specific type of plant?",
+        "Sure! Planting a flower involves selecting a suitable location, digging a hole, placing the plant, and watering thoroughly. Would you like step-by-step guidance?",
+        "Planting shrubs typically involves digging a hole twice the width of the root ball, placing the shrub, backfilling with soil, and watering. Would you like more detailed instructions?"
+      ]
+    },
+    {
+      "tag": "mango_tree_info",
+      "patterns": [
+        "Tell me about Mango trees",
+        "What's the information about Mango trees?",
+        "Can you give me details about planting Mango trees?",
+        "How do I plant a Mango tree?"
+      ],
+      "responses": [
+        "Mango trees are tropical fruit trees known for their delicious fruit and lush foliage.",
+        "Mango trees thrive in warm climates with plenty of sunlight and well-draining soil.",
+        "To plant a Mango tree, choose a sunny location with well-drained soil. Dig a hole twice as wide and deep as the root ball. Place the tree in the hole, backfill with soil, and water thoroughly.",
+        "Ensure your Mango tree receives regular watering, especially during dry periods. Fertilize it with a balanced fertilizer several times a year and prune as needed to maintain shape and encourage fruit production."
+      ]
+    },
+    {
+      "tag": "mango_care",
+      "patterns": [
+        "How do I take care of my Mango tree?",
+        "What are the care instructions for Mango trees?",
+        "Any tips for maintaining a Mango tree?"
+      ],
+      "responses": [
+        "Mango trees require regular watering, especially during dry periods, to keep the soil consistently moist but not waterlogged.",
+        "Prune your Mango tree annually to remove dead or diseased branches and to promote air circulation and fruit production.",
+        "Protect your Mango tree from frost during colder months, as it is sensitive to low temperatures."
+      ]
+    },
+    {
+      "tag": "mango_pests_diseases",
+      "patterns": [
+        "What pests affect Mango trees?",
+        "Are there any common diseases of Mango trees?",
+        "How do I deal with pests and diseases on my Mango tree?"
+      ],
+      "responses": [
+        "Common pests affecting Mango trees include mango scale, mango hoppers, and mango shoot caterpillars.",
+        "Mango trees are susceptible to diseases such as anthracnose, powdery mildew, and mango bacterial black spot.",
+        "To control pests on Mango trees, use insecticidal soaps or horticultural oils. For diseases, apply fungicides as directed."
+      ]
+    },
+    {
+      "tag": "mango_harvesting",
+      "patterns": [
+        "When is the right time to harvest Mangoes?",
+        "How do I know when Mangoes are ready for harvest?",
+        "What are the signs that Mangoes are ripe?"
+      ],
+      "responses": [
+        "Mangoes are typically ready for harvest 3 to 6 months after flowering, depending on the variety.",
+        "You can tell that Mangoes are ready for harvest when they change color and develop a slight give when gently squeezed.",
+        "The best indicator of ripeness in Mangoes is their fragrance; a strong, sweet aroma usually signifies that they are ready to be picked."
+      ]
+    },
+    {
+      "tag": "mango_varieties",
+      "patterns": [
+        "What are some popular Mango varieties?",
+        "Can you tell me about different types of Mangoes?",
+        "Which Mango variety is best for my region?"
+      ],
+      "responses": [
+        "Some popular Mango varieties include Tommy Atkins, Keitt, Haden, and Kent.",
+        "Mango varieties can vary in flavor, size, and growing requirements. Common types include Alphonso, Kesar, and Manila.",
+        "The best Mango variety for your region depends on factors like climate and growing conditions. I'd need to know your location to recommend the most suitable variety."
+      ]
+    }
+  ]
+}
