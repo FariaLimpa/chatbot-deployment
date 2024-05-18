@@ -37,7 +37,9 @@
             </p>
           </div>
         </div>
-        <div class="chatbox__messages p-4 bg-white flex-1 overflow-y-auto">
+        <div
+          class="chatbox__messages p-4 bg-white flex-1 overflow-y-auto flex flex-col-reverse"
+        >
           <div></div>
         </div>
         <div class="chatbox__footer bg-gray-100 p-4 flex items-center">
@@ -152,12 +154,12 @@
             .forEach(function (item, index) {
               if (item.name === "Sam") {
                 html +=
-                  '<div class="messages__item messages__item--visitor bg-green-100 p-2 rounded-lg mb-2">' +
+                  '<div class="messages__item messages__item--visitor bg-green-100 p-2 rounded-lg mb-2 ">' +
                   item.message +
                   "</div>";
               } else {
                 html +=
-                  '<div class="messages__item messages__item--operator bg-gray-300 p-2 rounded-lg mb-2 self-end">' +
+                  '<div class="messages__item messages__item--operator bg-gray-300 p-2 rounded-lg mb-2 ml-auto">' +
                   item.message +
                   "</div>";
               }
