@@ -58,9 +58,9 @@
 
     <section class="items-center justify-center flex mb-12 -mt-8">
       <a
-          href="/product"
-          class="bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-700"
-          >See more
+        href="/product"
+        class="bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-700"
+        >See more
       </a>
     </section>
 
@@ -144,6 +144,32 @@
         </div>
       </div>
     </div>
+    <!-- Footer -->
+    <footer class="bg-green-600 text-white py-6">
+    <div class="container mx-auto flex flex-col items-center">
+        <p class="text-lg mb-2">&copy; 2024 Plantify. All rights reserved.</p>
+        <div class="flex space-x-4">
+            <a href="#" class="text-white hover:text-gray-300 transition-colors duration-300">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M21 2H3a1 1 0 0 0-1 1v18a1 1 0 0 0 1 1h9v-7h-3v-3h3V9c0-2.206 1.794-4 4-4h3v3h-3c-.552 0-1 .448-1 1v1h4l-1 3h-3v7h4a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z" />
+                </svg>
+            </a>
+            <a href="#" class="text-white hover:text-gray-300 transition-colors duration-300">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M12 0C5.383 0 0 5.383 0 12c0 5.302 3.438 9.804 8.225 11.387-.12-1.047-.233-2.654.046-3.793.253-1.086 1.632-6.938 1.632-6.938s-.415-.836-.415-2.067c0-1.937 1.123-3.388 2.523-3.388 1.189 0 1.768.895 1.768 1.96 0 1.194-.761 2.986-1.154 4.658-.33 1.458.696 2.646 2.13 2.646 2.556 0 4.515-2.693 4.515-6.57 0-3.423-2.451-5.817-5.946-5.817-4.043 0-6.462 3.034-6.462 6.17 0 1.229.464 2.032 1.189 2.832.134.158.147.297.113.472-.012.054-.042.203-.055.257-.017.078-.066.095-.148.057-.54-.29-.889-1.055-.889-1.883 0-3.61 2.618-6.757 7.495-6.757 3.936 0 6.808 2.85 6.808 5.91 0 3.525-2.217 6.355-5.29 6.355-1.034 0-1.998-.535-2.327-1.162l-.628 2.421c-.203.777-.772 1.748-1.158 2.34A11.985 11.985 0 0 1 12 24c6.617 0 12-5.383 12-12S18.617 0 12 0z" />
+                </svg>
+            </a>
+            <a href="#" class="text-white hover:text-gray-300 transition-colors duration-300">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm4.875 7.5H17.25c-.43 0-.875.448-.875.875v2.625H15V7.5h-1.5v3.5H13.5V7.5h-1.5v3.5h-1.875a.878.878 0 0 0-.875.875V15h-1.5v1.375c0 .427.447.875.875.875H9.75v2.75c0 .428.448.875.875.875h1.75c.427 0 .875-.448.875-.875v-2.75h1.875a.878.878 0 0 0 .875-.875V15h1.5c.427 0 .875-.447.875-.875V11.5c0-.427-.448-.875-.875-.875zm0 0" />
+                </svg>
+            </a>
+        </div>
+    </div>
+</footer>
 
     <script>
       $SCRIPT_ROOT = {{ request.script_root|tojson }};
@@ -203,20 +229,22 @@
           category: "Herbs",
         },
         {
-          "id": 5,
-          "name": "Organic Rosemary",
-          "description": "A fragrant herb ideal for cooking and aromatherapy.",
-          "price": 6.99,
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-JS-7QylYX6TRmqtF62LHn6oG6Vv3CoxTRk-GPr6ru9LhrCGa4_TWnmSYvFlN_8YFOGQ&usqp=CAU",
-          "category": "Herbs"
+          id: 5,
+          name: "Organic Rosemary",
+          description: "A fragrant herb ideal for cooking and aromatherapy.",
+          price: 6.99,
+          image_url:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-JS-7QylYX6TRmqtF62LHn6oG6Vv3CoxTRk-GPr6ru9LhrCGa4_TWnmSYvFlN_8YFOGQ&usqp=CAU",
+          category: "Herbs",
         },
         {
-          "id": 6,
-          "name": "Organic Chamomile",
-          "description": "A gentle herb known for its calming effects.",
-          "price": 7.99,
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROoxMDsq-5mfXCfZn64aBBZC2SDGKVskGrqMlGrBpvnDyQ5NHdoq54lrZ39E85SZ8CP70&usqp=CAU",
-          "category": "Medicinal Plants"
+          id: 6,
+          name: "Organic Chamomile",
+          description: "A gentle herb known for its calming effects.",
+          price: 7.99,
+          image_url:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROoxMDsq-5mfXCfZn64aBBZC2SDGKVskGrqMlGrBpvnDyQ5NHdoq54lrZ39E85SZ8CP70&usqp=CAU",
+          category: "Medicinal Plants",
         },
       ];
 
