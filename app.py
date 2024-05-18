@@ -11,6 +11,11 @@ def index_get():
     return render_template("base.html")
 
 
+@app.get("/product")
+def products():
+    return render_template("product.html")
+
+
 @app.post("/predict")
 def predict():
     text = request.get_json()["message"]

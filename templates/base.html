@@ -1,31 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
-
   <head>
     <meta charset="UTF-8" />
-    <title>Chatbot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plantify - Organic Plant-Based Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
   </head>
-  <body>
-    <div class="background">
-      <div class="background__content">
-        <h1>Welcome to Our Chat Support</h1>
-        <p>
-          We're here to help you with any questions or concerns you may have.
-          Start a conversation by clicking the chat button below!
+  <body class="bg-green-50">
+    <!-- Navbar -->
+    <nav class="bg-green-600 p-4 text-white">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold">Plantify</a>
+        <div>
+          <a href="/product" class="mx-2 hover:underline">Products</a>
+          <a href="#about" class="mx-2 hover:underline">About Us</a>
+          <a href="#contact" class="mx-2 hover:underline">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-green-100 py-20">
+      <div class="container mx-auto flex flex-col items-center">
+        <h1 class="text-4xl font-bold text-green-800 mb-4">
+          Welcome to Plantify
+        </h1>
+        <p class="text-lg text-green-700 mb-8 text-center max-w-2xl">
+          Discover our range of organic, plant-based products. Sustainably grown
+          and carefully curated for your health and the planet.
+        </p>
+        <a
+          href="#products"
+          class="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700"
+          >Shop Now</a
+        >
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center text-green-800 mb-10">
+          Our Products
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <!-- Product Card -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              src="https://via.placeholder.com/300"
+              alt="Product 1"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-green-800 mb-2">
+                Organic Plant 1
+              </h3>
+              <p class="text-green-700 mb-4">
+                High-quality organic plant. Perfect for indoor decoration.
+              </p>
+              <a href="#" class="text-green-600 hover:underline">Learn More</a>
+            </div>
+          </div>
+          <!-- Repeat Product Cards for other products -->
+          <!-- ... -->
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="bg-green-100 py-20">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-green-800 mb-10">About Us</h2>
+        <p class="text-lg text-green-700 max-w-2xl mx-auto">
+          At Plantify, we believe in sustainable living. Our products are
+          sourced from organic farms that prioritize environmental health and
+          plant quality. Join us in making the world greener, one plant at a
+          time.
         </p>
       </div>
-    </div>
-    <div class="container">
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-green-800 mb-10">Contact Us</h2>
+        <p class="text-lg text-green-700 mb-6">
+          Have any questions? Feel free to reach out!
+        </p>
+        <a
+          href="mailto:support@plantify.com"
+          class="text-green-600 hover:underline"
+          >support@plantify.com</a
+        >
+      </div>
+    </section>
+
+    <!-- Chatbox -->
+    <div class="container fixed bottom-4 right-4">
       <div class="chatbox">
         <div class="chatbox__support">
-          <div class="chatbox__header">
+          <div class="chatbox__header bg-green-600 text-white p-4 rounded-t-lg">
             <div class="chatbox__image--header">
               <img
                 src="https://static-00.iconduck.com/assets.00/chat-icon-2048x2048-i7er18st.png"
                 height="50"
                 width="50"
-                alt="image"
+                alt="Chat Icon"
               />
             </div>
             <div class="chatbox__content--header">
@@ -35,16 +119,24 @@
               </p>
             </div>
           </div>
-          <div class="chatbox__messages">
+          <div class="chatbox__messages p-4 bg-white">
             <div></div>
           </div>
-          <div class="chatbox__footer">
-            <input type="text" placeholder="Write a message..." />
-            <button class="chatbox__send--footer send__button">Send</button>
+          <div class="chatbox__footer bg-gray-100 p-4 flex items-center">
+            <input
+              type="text"
+              placeholder="Write a message..."
+              class="flex-grow border border-gray-300 rounded-lg p-2 mr-2"
+            />
+            <button
+              class="chatbox__send--footer send__button bg-green-600 text-white px-4 py-2 rounded-lg"
+            >
+              Send
+            </button>
           </div>
         </div>
         <div class="chatbox__button">
-          <button>
+          <button class="bg-green-600 p-4 rounded-full shadow-lg">
             <img
               src="{{ url_for('static', filename='images/chatbox-icon.svg') }}"
               alt="Chat"
