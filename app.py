@@ -1,7 +1,5 @@
 from flask import Flask, render_template, request, jsonify
-
 from chat import get_response
-
 
 app = Flask(__name__)
 
@@ -12,8 +10,13 @@ def index_get():
 
 
 @app.get("/product")
-def products():
+def show_products():
     return render_template("product.html")
+
+
+@app.get("/chatbot")
+def chatbot():
+    return render_template("chatbot.html")
 
 
 @app.post("/predict")

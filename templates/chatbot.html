@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Support</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .chatbox--active {
+        display: flex !important;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 flex h-screen">
+    <div class="container mx-auto flex-1 flex flex-col justify-between">
+      <div
+        class="chatbox hidden md:flex flex-col flex-1 rounded-lg shadow-lg mx-4 my-8"
+      >
+        <div
+          class="chatbox__header bg-green-600 text-white p-4 rounded-t-lg flex items-center"
+        >
+          <div class="chatbox__image--header">
+            <img
+              src="https://static-00.iconduck.com/assets.00/chat-icon-2048x2048-i7er18st.png"
+              height="50"
+              width="50"
+              alt="Chat Icon"
+            />
+          </div>
+          <div class="chatbox__content--header ml-4">
+            <h4 class="chatbox__heading--header font-bold">Chat Support</h4>
+            <p class="chatbox__description--header">
+              Hi. My name is PlantChat. How can I help you today?
+            </p>
+          </div>
+        </div>
+        <div class="chatbox__messages p-4 bg-white flex-1 overflow-y-auto">
+          <div></div>
+        </div>
+        <div class="chatbox__footer bg-gray-100 p-4 flex items-center">
+          <input
+            type="text"
+            placeholder="Write a message..."
+            class="flex-grow border border-gray-300 rounded-lg p-2 mr-2"
+          />
+          <button
+            class="chatbox__send--footer send__button bg-green-600 text-white px-4 py-2 rounded-lg"
+          >
+            Send
+          </button>
+        </div>
+      </div>
+      <div class="chatbox__button fixed bottom-4 right-4 md:hidden">
+        <button class="bg-green-600 p-4 rounded-full shadow-lg">
+          <img
+            src="{{ url_for('static', filename='images/chatbox-icon.svg') }}"
+            alt="Chat"
+          />
+        </button>
+      </div>
+    </div>
+
+    <script>
+      document
+        .querySelector(".chatbox__button")
+        .addEventListener("click", () => {
+          const chatbox = document.querySelector(".chatbox");
+          chatbox.classList.toggle("hidden");
+          chatbox.classList.toggle("flex");
+        });
+
+      class Chatbox {
+        constructor() {
+          this.args = {
+            openButton: document.querySelector(".chatbox__button"),
+            chatBox: document.querySelector(".chatbox"),
+            sendButton: document.querySelector(".send__button"),
+          };
+
+          this.state = false;
+          this.messages = [];
+        }
+
+        display() {
+          const { openButton, chatBox, sendButton } = this.args;
+
+          openButton.addEventListener("click", () => this.toggleState(chatBox));
+
+          sendButton.addEventListener("click", () =>
+            this.onSendButton(chatBox)
+          );
+
+          const node = chatBox.querySelector("input");
+          node.addEventListener("keyup", ({ key }) => {
+            if (key === "Enter") {
+              this.onSendButton(chatBox);
+            }
+          });
+        }
+
+        toggleState(chatbox) {
+          this.state = !this.state;
+
+          // show or hides the box
+          if (this.state) {
+            chatbox.classList.add("chatbox--active");
+          } else {
+            chatbox.classList.remove("chatbox--active");
+          }
+        }
+
+        onSendButton(chatbox) {
+          var textField = chatbox.querySelector("input");
+          let text1 = textField.value;
+          if (text1 === "") {
+            return;
+          }
+
+          let msg1 = { name: "User", message: text1 };
+          this.messages.push(msg1);
+
+          fetch("http://127.0.0.1:5000/predict", {
+            method: "POST",
+            body: JSON.stringify({ message: text1 }),
+            mode: "cors",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          })
+            .then((r) => r.json())
+            .then((r) => {
+              let msg2 = { name: "Sam", message: r.answer };
+              this.messages.push(msg2);
+              this.updateChatText(chatbox);
+              textField.value = "";
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+              this.updateChatText(chatbox);
+              textField.value = "";
+            });
+        }
+
+        updateChatText(chatbox) {
+          var html = "";
+          this.messages
+            .slice()
+            .reverse()
+            .forEach(function (item, index) {
+              if (item.name === "Sam") {
+                html +=
+                  '<div class="messages__item messages__item--visitor bg-green-100 p-2 rounded-lg mb-2">' +
+                  item.message +
+                  "</div>";
+              } else {
+                html +=
+                  '<div class="messages__item messages__item--operator bg-gray-300 p-2 rounded-lg mb-2 self-end">' +
+                  item.message +
+                  "</div>";
+              }
+            });
+
+          const chatmessage = chatbox.querySelector(".chatbox__messages");
+          chatmessage.innerHTML = html;
+        }
+      }
+
+      const chatbox = new Chatbox();
+      chatbox.display();
+    </script>
+  </body>
+</html>
