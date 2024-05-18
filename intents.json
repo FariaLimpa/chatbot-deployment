@@ -41,7 +41,8 @@
         "What can you do?",
         "What are your capabilities?",
         "How can you help me?",
-        "What services do you offer?"
+        "What services do you offer?",
+        "Who are you?"
       ],
       "responses": [
         "I'm here to assist you with information about plants and gardening.",
@@ -203,6 +204,363 @@
         "Some popular Mango varieties include Tommy Atkins, Keitt, Haden, and Kent.",
         "Mango varieties can vary in flavor, size, and growing requirements. Common types include Alphonso, Kesar, and Manila.",
         "The best Mango variety for your region depends on factors like climate and growing conditions. I'd need to know your location to recommend the most suitable variety."
+      ]
+    },
+    {
+      "tag": "organic_aloe_vera_info",
+      "patterns": [
+        "Tell me about Organic Aloe Vera.",
+        "Organic Aloe Vera information, please.",
+        "Organic Aloe Vera",
+        "Alow Vera",
+        "What can you tell me about Organic Aloe Vera?",
+        "Information on Organic Aloe Vera, please.",
+        "I'd like to know more about Organic Aloe Vera."
+      ],
+      "responses": [
+        "Organic Aloe Vera is a soothing plant known for its medicinal properties. It's commonly used in skincare products and has various health benefits.",
+        "Organic Aloe Vera is a versatile plant with many uses. It's known for its healing properties and is often used in skincare, haircare, and health products.",
+        "Organic Aloe Vera is a succulent plant with thick, fleshy leaves that contain a gel-like substance. It's used for its healing and moisturizing properties in various products."
+      ]
+    },
+    {
+      "tag": "organic_basil_info",
+      "patterns": [
+        "What do you know about Organic Basil?",
+        "Can you tell me about Organic Basil?",
+        "Information on Organic Basil, please.",
+        "I'd like to learn about Organic Basil.",
+        "Tell me about Organic Basil, please.",
+        "Organic Basil",
+        "Basil"
+      ],
+      "responses": [
+        "Organic Basil is a fragrant herb perfect for cooking and garnishing. It adds a delightful flavor to dishes and is easy to grow.",
+        "Organic Basil is a popular culinary herb with a sweet, aromatic flavor. It's commonly used in Italian cuisine and pairs well with tomatoes, pasta, and salads.",
+        "Organic Basil is a versatile herb with a fresh, peppery flavor. It's used in a variety of dishes, from pasta sauces to salads, and is a staple in many cuisines."
+      ]
+    },
+    {
+      "tag": "organic_lavender_info",
+      "patterns": [
+        "I'm interested in Organic Lavender. What can you tell me?",
+        "Tell me more about Organic Lavender.",
+        "What are the properties of Organic Lavender?",
+        "Information about Organic Lavender, please.",
+        "Organic Lavender",
+        "Lavender"
+      ],
+      "responses": [
+        "Organic Lavender is a calming plant with beautiful purple flowers. It's often used in aromatherapy, skincare, and culinary applications for its soothing aroma and taste.",
+        "Organic Lavender is a fragrant herb known for its calming properties. It's used in essential oils, teas, and sachets to promote relaxation and reduce stress.",
+        "Organic Lavender is a versatile herb with a sweet, floral aroma. It's used in cooking, aromatherapy, and skincare products for its soothing and relaxing effects."
+      ]
+    },
+    {
+      "tag": "organic_mint_info",
+      "patterns": [
+        "Could you provide details on Organic Mint?",
+        "What's there to know about Organic Mint?",
+        "Tell me about Organic Mint, please.",
+        "I want to learn more about Organic Mint.",
+        "Organic Mint",
+        "Mint"
+      ],
+      "responses": [
+        "Organic Mint is a refreshing herb used in a variety of dishes and drinks. It has a cooling effect and is known for its aromatic leaves.",
+        "Organic Mint is a versatile herb with a refreshing flavor. It's used in beverages, desserts, and savory dishes to add a burst of freshness.",
+        "Organic Mint is a popular herb with a cool, refreshing taste. It's used in teas, cocktails, and desserts to add a hint of minty flavor."
+      ]
+    },
+    {
+      "tag": "organic_rosemary_info",
+      "patterns": [
+        "What's the deal with Organic Rosemary?",
+        "Tell me about Organic Rosemary.",
+        "Information on Organic Rosemary, please.",
+        "I'd like to know more about Organic Rosemary.",
+        "Organic Rosemary",
+        "Rosemary"
+      ],
+      "responses": [
+        "Organic Rosemary is a fragrant herb ideal for cooking and aromatherapy. It's known for its distinctive pine-like aroma and is used to flavor various dishes.",
+        "Organic Rosemary is a versatile herb with a woody, pine-like flavor. It's used in Mediterranean cuisine and pairs well with roasted meats, vegetables, and bread.",
+        "Organic Rosemary is a popular herb with a strong, aromatic flavor. It's used in cooking, skincare, and herbal remedies for its therapeutic properties."
+      ]
+    },
+    {
+      "tag": "organic_thyme_info",
+      "patterns": [
+        "What can you tell me about Organic Thyme?",
+        "Tell me more about Organic Thyme.",
+        "Information about Organic Thyme, please.",
+        "I'm interested in learning about Organic Thyme.",
+        "Organic Thyme",
+        "Thyme"
+      ],
+      "responses": [
+        "Organic Thyme is a versatile herb with a strong aroma, perfect for cooking. It adds depth of flavor to soups, stews, and meat dishes."
+      ]
+    },
+    {
+      "tag": "organic_oregano_info",
+      "patterns": [
+        "I'd like to know about Organic Oregano.",
+        "What do you know about Organic Oregano?",
+        "Tell me about Organic Oregano, please.",
+        "Information on Organic Oregano, please.",
+        "Organic Oregano",
+        "Oregano"
+      ],
+      "responses": [
+        "Organic Oregano is a popular herb used in many cuisines for its bold flavor. It's commonly used in Italian, Greek, and Mexican dishes to add a savory taste.",
+        "Organic Oregano is a versatile herb with a robust flavor. It's used in a variety of dishes, from pasta sauces to grilled meats, and is a staple in many spice blends.",
+        "Organic Oregano is a fragrant herb with a strong, peppery flavor. It's used in Mediterranean and Mexican cuisines to add depth to dishes like pizza, pasta, and tacos."
+      ]
+    },
+    {
+      "tag": "organic_chamomile_info",
+      "patterns": [
+        "What are the properties of Organic Chamomile?",
+        "Can you provide information on Organic Chamomile?",
+        "Tell me about Organic Chamomile, please.",
+        "I'm interested in Organic Chamomile. What can you tell me?",
+        "Organic Chamomile",
+        "Chamomile"
+      ],
+      "responses": [
+        "Organic Chamomile is a gentle herb known for its calming effects. It's often brewed into tea and used to promote relaxation and improve sleep quality.",
+        "Organic Chamomile is a soothing herb with a delicate flavor. It's used in teas, skincare products, and aromatherapy for its calming and anti-inflammatory properties.",
+        "Organic Chamomile is a versatile herb with a light, floral taste. It's used in teas, tinctures, and salves to promote relaxation, reduce stress, and soothe digestive issues."
+      ]
+    },
+    {
+      "tag": "organic_sage_info",
+      "patterns": [
+        "Tell me more about Organic Sage.",
+        "What can you tell me about Organic Sage?",
+        "Information on Organic Sage, please.",
+        "I'd like to know about Organic Sage.",
+        "Organic Sage",
+        "Sage"
+      ],
+      "responses": [
+        "Organic Sage is a savory herb often used in cooking and medicinal teas. It has a strong flavor and is used to season meats, soups, and stuffing.",
+        "Organic Sage is a versatile herb with a warm, earthy flavor. It's used in a variety of dishes, from roasted vegetables to pasta sauces, and is known for its aromatic leaves.",
+        "Organic Sage is a fragrant herb with a slightly peppery taste. It's used in stuffing, sausages, and sauces to add depth of flavor and is a popular herb in Mediterranean cuisine."
+      ]
+    },
+    {
+      "tag": "organic_parsley_info",
+      "patterns": [
+        "I want to learn about Organic Parsley.",
+        "What's there to know about Organic Parsley?",
+        "Can you provide information on Organic Parsley?",
+        "Tell me about Organic Parsley, please.",
+        "Organic Parsley",
+        "Parsley"
+      ],
+      "responses": [
+        "Organic Parsley is a fresh herb used as a garnish and flavor enhancer. It's rich in vitamins and adds a bright, herbaceous taste to dishes.",
+        "Organic Parsley is a versatile herb with a mild, fresh flavor. It's used in salads, sauces, and soups to add color and brightness to dishes.",
+        "Organic Parsley is a popular herb with a clean, fresh taste. It's used in a variety of dishes, from tabbouleh to chimichurri, and is known for its vibrant green leaves."
+      ]
+    },
+    {
+      "tag": "organic_dill_info",
+      "patterns": [
+        "What are the properties of Organic Dill?",
+        "Tell me about Organic Dill, please.",
+        "Information on Organic Dill, please.",
+        "I'd like to know more about Organic Dill.",
+        "Organic Dill",
+        "Dill"
+      ],
+      "responses": [
+        "Organic Dill is a fragrant herb often used in pickling and cooking. It has feathery leaves and a tangy flavor that complements fish, potatoes, and salads.",
+        "Organic Dill is a versatile herb with a fresh, tangy flavor. It's used in salads, sauces, and pickles to add a burst of flavor and aroma.",
+        "Organic Dill is a flavorful herb with delicate, feathery leaves. It's used in a variety of dishes, from seafood to salads, and is known for its bright, citrusy taste."
+      ]
+    },
+    {
+      "tag": "organic_cilantro_info",
+      "patterns": [
+        "Tell me more about Organic Cilantro.",
+        "What can you tell me about Organic Cilantro?",
+        "Information on Organic Cilantro, please.",
+        "I'd like to learn about Organic Cilantro.",
+        "Organic Cilantro",
+        "Cilantro"
+      ],
+      "responses": [
+        "Organic Cilantro is a fresh herb commonly used in Latin and Asian cuisines. It adds a citrusy flavor to dishes and is often used in salsas, curries, and salads.",
+        "Organic Cilantro is a versatile herb with a bright, citrusy flavor. It's used in a variety of dishes, from guacamole to pho, and is known for its aromatic leaves.",
+        "Organic Cilantro is a popular herb with a fresh, zesty taste. It's used in salsas, chutneys, and marinades to add a burst of flavor and is a staple in many cuisines."
+      ]
+    },
+    {
+      "tag": "organic_lemongrass_info",
+      "patterns": [
+        "What's the deal with Organic Lemongrass?",
+        "Tell me about Organic Lemongrass, please.",
+        "Information on Organic Lemongrass, please.",
+        "I want to learn about Organic Lemongrass.",
+        "Organic Lemongrass",
+        "Lemongrass"
+      ],
+      "responses": [
+        "Organic Lemongrass is a fragrant grass used in teas, soups, and curries. It has a lemony flavor and aroma, adding freshness to dishes.",
+        "Organic Lemongrass is a versatile herb with a citrusy flavor. It's used in Asian cuisine, teas, and aromatherapy products for its refreshing taste and aroma.",
+        "Organic Lemongrass is a popular herb with a bright, lemony taste. It's used in curries, stir-fries, and beverages to add a zesty flavor and is known for its aromatic leaves."
+      ]
+    },
+    {
+      "tag": "organic_peppermint_info",
+      "patterns": [
+        "What are the properties of Organic Peppermint?",
+        "Can you provide information on Organic Peppermint?",
+        "Tell me about Organic Peppermint, please.",
+        "I'd like to know more about Organic Peppermint.",
+        "Organic Peppermint",
+        "Peppermint"
+      ],
+      "responses": [
+        "Organic Peppermint is a cooling herb used in teas and as a flavoring. It has a refreshing taste and is known for its soothing effects on digestion.",
+        "Organic Peppermint is a versatile herb with a minty, refreshing flavor. It's used in teas, desserts, and oral care products for its cooling and invigorating properties.",
+        "Organic Peppermint is a popular herb with a crisp, minty taste. It's used in candies, teas, and aromatherapy products to add a refreshing flavor and is known for its aromatic leaves."
+      ]
+    },
+    {
+      "tag": "organic_oregano_info",
+      "patterns": [
+        "Tell me more about Organic Stevia.",
+        "What can you tell me about Organic Stevia?",
+        "Information on Organic Stevia, please.",
+        "I'd like to learn about Organic Stevia.",
+        "Organic Stevia",
+        "Stevia"
+      ],
+      "responses": [
+        "Organic Stevia is a natural sweetener used as a sugar substitute. It's derived from the leaves of the Stevia rebaudiana plant and is much sweeter than sugar but has zero calories.",
+        "Organic Stevia is a versatile herb with a sweet taste. It's used as a sugar substitute in beverages, desserts, and baked goods and is known for its zero-calorie content.",
+        "Organic Stevia is a popular herb with a sweet, licorice-like flavor. It's used in teas, smoothies, and baked goods to add sweetness without the calories and is known for its natural origin."
+      ]
+    },
+    {
+      "tag": "organic_eucalyptus_info",
+      "patterns": [
+        "What's the deal with Organic Eucalyptus?",
+        "Tell me about Organic Eucalyptus, please.",
+        "Information on Organic Eucalyptus, please.",
+        "I want to learn about Organic Eucalyptus.",
+        "Organic Eucalyptus",
+        "Eucalyptus"
+      ],
+      "responses": [
+        "Organic Eucalyptus is a medicinal plant known for its aromatic leaves. It's commonly used in cough drops, chest rubs, and aromatherapy products for its respiratory benefits.",
+        "Organic Eucalyptus is a versatile herb with a fresh, camphoraceous aroma. It's used in skincare, cleaning products, and medicinal remedies for its cooling and decongestant properties.",
+        "Organic Eucalyptus is a popular herb with a minty, pine-like scent. It's used in essential oils, balms, and inhalants to relieve congestion and promote respiratory health."
+      ]
+    },
+    {
+      "tag": "organic_lemon_balm_info",
+      "patterns": [
+        "What are the properties of Organic Lemon Balm?",
+        "Can you provide information on Organic Lemon Balm?",
+        "Tell me about Organic Lemon Balm, please.",
+        "I'd like to know more about Organic Lemon Balm.",
+        "Organic Lemon Balm",
+        "Lemon Balm"
+      ],
+      "responses": [
+        "Organic Lemon Balm is a calming herb with a lemony aroma. It's often brewed into tea and used to reduce stress, promote relaxation, and improve sleep quality.",
+        "Organic Lemon Balm is a versatile herb with a citrusy flavor. It's used in teas, tinctures, and salves to soothe anxiety, aid digestion, and support overall well-being.",
+        "Organic Lemon Balm is a popular herb with a bright, lemony taste. It's used in teas, desserts, and aromatherapy products to promote relaxation, reduce stress, and uplift the mood."
+      ]
+    },
+    {
+      "tag": "organic_marjoram_info",
+      "patterns": [
+        "Tell me more about Organic Marjoram.",
+        "What can you tell me about Organic Marjoram?",
+        "Information on Organic Marjoram, please.",
+        "I'd like to learn about Organic Marjoram.",
+        "Organic Marjoram",
+        "Marjoram"
+      ],
+      "responses": [
+        "Organic Marjoram is a sweet, aromatic herb often used in Mediterranean cooking. It has a similar flavor profile to oregano but is slightly sweeter and more delicate.",
+        "Organic Marjoram is a versatile herb with a mild, sweet flavor. It's used in soups, stews, and meat dishes to add depth of flavor and is known for its aromatic leaves.",
+        "Organic Marjoram is a fragrant herb with a delicate, sweet taste. It's used in a variety of dishes, from roasted vegetables to pasta sauces, and is a popular herb in Mediterranean cuisine."
+      ]
+    },
+    {
+      "tag": "organic_tarragon_info",
+      "patterns": [
+        "What's the deal with Organic Tarragon?",
+        "Tell me about Organic Tarragon, please.",
+        "Information on Organic Tarragon, please.",
+        "I want to learn about Organic Tarragon.",
+        "Organic Tarragon",
+        "Tarragon"
+      ],
+      "responses": [
+        "Organic Tarragon is a unique herb with a slightly licorice flavor. It's used to add depth to sauces, dressings, and marinades, particularly in French cuisine.",
+        "Organic Tarragon is a versatile herb with a hint of licorice. It's used in sauces, salads, and egg dishes to add a subtle, aromatic flavor and is known for its delicate leaves.",
+        "Organic Tarragon is a popular herb with a mild, anise-like taste. It's used in French cuisine to flavor dishes like chicken, fish, and vegetables and is known for its aromatic leaves."
+      ]
+    },
+    {
+      "tag": "organic_bay_leaves_info",
+      "patterns": [
+        "What are the properties of Organic Bay Leaves?",
+        "Can you provide information on Organic Bay Leaves?",
+        "Tell me about Organic Bay Leaves, please.",
+        "I'd like to know more about Organic Bay Leaves.",
+        "Organic Bay Leaves",
+        "Bay Leaves"
+      ],
+      "responses": [
+        "Organic Bay Leaves are flavorful leaves often used in soups and stews. They add a subtle, earthy aroma and enhance the taste of dishes when simmered.",
+        "Organic Bay Leaves are versatile herbs with a mild, aromatic flavor. They're used in sauces, braises, and pickles to add depth and complexity to dishes and are known for their fragrant leaves.",
+        "Organic Bay Leaves are popular herbs with a warm, woody taste. They're used in Mediterranean cuisine to flavor dishes like soups, stews, and sauces and are known for their aromatic leaves."
+      ]
+    },
+    {
+      "tag": "jokes",
+      "patterns": [
+        "Tell me a joke",
+        "Do you know any jokes?",
+        "Can you make me laugh?",
+        "I need a joke",
+        "Joke"
+      ],
+      "responses": [
+        "Why did the scarecrow win an award? Because he was outstanding in his field!",
+        "What do you call a fish wearing a crown? A kingfish!",
+        "Why did the math book look sad? Because it had too many problems.",
+        "What do you call a bear with no teeth? A gummy bear!",
+        "Why did the tomato turn red? Because it saw the salad dressing!"
+      ]
+    },
+    {
+      "tag": "md_monarul_islam",
+      "patterns": [
+        "Who is Mr. Md. Monarul Islam?",
+        "Can you tell me about Mr. Md. Monarul Islam?",
+        "What is the background of Mr. Md. Monarul Islam?",
+        "Could you provide information on Mr. Md. Monarul Islam?",
+        "Mr. Md. Monarul Islam",
+        "Md. Monarul Islam",
+        "Monarul Islam"
+      ],
+      "responses": [
+        "Mr. Md. Monarul Islam is a Lecturer in the Department of Computer Science and Engineering at Daffodil International University.",
+        "He holds a B.Sc in Engineering in Computer Science and Engineering from Khulna University Of Engineering & Technology.",
+        "Mr. Md. Monarul Islam is a faculty member of the Faculty of Science and Information Technology.",
+        "He has expertise in various areas including Machine Learning (ML), Natural Language Processing (NLP), Digital Image Processing, Data Mining, Artificial Intelligence (AI), Compiler Design, Theory Of Computing, and Computer Networks.",
+        "For more information, you can visit his personal webpage: [Mr. Md. Monarul Islam's Personal Webpage](https://faculty.daffodilvarsity.edu.bd/profile/cse/monarul.html)",
+        "You can contact him via email at monarul.cse@diu.edu.bd or on his cell phone at 01796950211."
       ]
     }
   ]
